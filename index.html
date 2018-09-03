@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="scripts/moment.min.js"></script>
+        <script type="text/javascript" >
+        function timeIt() {
+            document.getElementById("time").innerHTML =
+            "<p>" + moment().format("MMM Do YYYY") + "<br/>" +
+            moment().format("LT") + "</p>";
+        }
+        setInterval(timeIt, 1000)
+        </script>
+    </head>
+    <body bgcolor="black" onload="timeIt()">
+        <div style="height:50%">
+        </div>
+        <div id="time" style="font-family:Arial, Helvetica, sans-serif;text-align:center;color:grey;font-size: 48pt">
+            It Broke :(
+        </div>
+    </body>
+</html>
