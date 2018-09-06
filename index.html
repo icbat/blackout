@@ -11,6 +11,8 @@
           try {
             timeIt();
             setInterval(timeIt, 1000)
+            document.getElementById("date").className = "pulse";
+            document.getElementById("time").className = "pulse";
           } catch(error) {
             console.error(error);
             document.getElementById("date").innerHTML = "It Broke :(";
