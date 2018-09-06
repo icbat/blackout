@@ -9,6 +9,11 @@
         setInterval(timeIt, 1000)
         </script>
         <style>
+        body {
+          display: flex;
+          justify-content: center; /* align horizontal */
+          align-items: center; /* align vertical */
+        }
         .display-box {
           font-family:Arial, Helvetica, sans-serif;
           text-align:center;
@@ -19,11 +24,11 @@
         <title>Darker Screen, Emersive Gaming</title>
     </head>
     <body bgcolor="black" onload="timeIt()">
-        <div style="height:50%">
-        </div>
+      <div class="load-bearing-wrapper">
         <div id="date" class="display-box">
             It Broke :(
         </div>
         <div id="time" class="display-box"></div>
+      </div>
     </body>
 </html>
