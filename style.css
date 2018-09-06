@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: grey;
+  font-size: 48pt;
+  animation: fadein 0.75s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
